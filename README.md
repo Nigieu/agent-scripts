@@ -1,1 +1,7 @@
-# agent-scripts
+#!/bin/bash
+
+if [ ${UID} -ne 0 ]
+then
+echo "You need root access"
+exit 1
+fi
